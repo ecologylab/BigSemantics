@@ -1,0 +1,12 @@
+[submodule "BigSemanticsWrapperRepository"]
+	path = BigSemanticsWrapperRepository
+	url = https://github.com/ecologylab/BigSemanticsWrapperRepository.git
+[submodule "BigSemanticsJava"]
+	path = BigSemanticsJava
+	url = https://github.com/ecologylab/BigSemanticsJava.git
+[submodule "BigSemanticsService"]
+	path = BigSemanticsService
+	url = https://github.com/ecologylab/BigSemanticsService.git
+[submodule "BigSemanticsJavaScript"]
+	path = BigSemanticsJavaScript
+	url = https://github.com/ecologylab/BigSemanticsJavaScript.git
