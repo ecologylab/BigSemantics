@@ -1,3 +1,6 @@
+[submodule "simplJava"]
+	path = simplJava
+	url = https://github.com/ecologylab/simplJava.git
 [submodule "BigSemanticsWrapperRepository"]
 	path = BigSemanticsWrapperRepository
 	url = https://github.com/ecologylab/BigSemanticsWrapperRepository.git
