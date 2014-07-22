@@ -13,3 +13,6 @@
 [submodule "BigSemanticsJavaScript"]
 	path = BigSemanticsJavaScript
 	url = https://github.com/ecologylab/BigSemanticsJavaScript.git
+[submodule "BigSemanticsCSharp"]
+	path = BigSemanticsCSharp
+	url = https://github.com/ecologylab/BigSemanticsCSharp.git
