@@ -1,4 +1,0 @@
-BigSemanticsWrapperRepository ../BigSemanticsWrapperRepository
-BigSemanticsJava ../BigSemanticsJava
-BigSemanticsService ../BigSemanticsService
-BigSemanticsJavaScript ../BigSemanticsJavaScript
