@@ -1,18 +1,18 @@
 [submodule "simplJava"]
 	path = simplJava
-	url = https://github.com/ecologylab/simplJava.git
+	url = ../simplJava.git
 [submodule "BigSemanticsWrapperRepository"]
 	path = BigSemanticsWrapperRepository
-	url = https://github.com/ecologylab/BigSemanticsWrapperRepository.git
+	url = ../BigSemanticsWrapperRepository.git
 [submodule "BigSemanticsJava"]
 	path = BigSemanticsJava
-	url = https://github.com/ecologylab/BigSemanticsJava.git
+	url = ../BigSemanticsJava.git
 [submodule "BigSemanticsService"]
 	path = BigSemanticsService
-	url = https://github.com/ecologylab/BigSemanticsService.git
+	url = ../BigSemanticsService.git
 [submodule "BigSemanticsJavaScript"]
 	path = BigSemanticsJavaScript
-	url = https://github.com/ecologylab/BigSemanticsJavaScript.git
+	url = ../BigSemanticsJavaScript.git
 [submodule "BigSemanticsCSharp"]
 	path = BigSemanticsCSharp
-	url = https://github.com/ecologylab/BigSemanticsCSharp.git
+	url = ../BigSemanticsCSharp.git
