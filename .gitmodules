@@ -1,6 +1,9 @@
 [submodule "simplJava"]
 	path = simplJava
 	url = ../simplJava.git
+[submodule "simplCSharp"]
+	path = simplCSharp
+	url = ../simplCSharp.git
 [submodule "BigSemanticsWrapperRepository"]
 	path = BigSemanticsWrapperRepository
 	url = ../BigSemanticsWrapperRepository.git
