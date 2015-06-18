@@ -12,6 +12,8 @@ REM   C:\GitRepo\> git submodule foreach git checkout -- "*"
 REM   C:\GitRepo\> git submodule foreach git clean -f
 REM   C:\GitRepo\> git submodule foreach git clean -f -d
 
+git checkout master
+git pull
 
 git submodule foreach git checkout master
 git submodule foreach git pull
