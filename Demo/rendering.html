@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Simple BigSemantics Demo</title>
+
+	<!-- non BigSemantics include statements -->
+	<script src="../BigSemanticsJavaScript/libraries/jquery-2.0.0.min.js"></script>
+
+
+	<!-- bsjsCore Files. You must include them in this order so as to use any BigSemantics porject -->
+	<!-- Readyable is a class used to handle the asynchronous load time of the BS project
+		BSAutoSwitch is an interface to BigSemantics that can switch between using the lab's hosted service for metadata
+			and using a browser-installed extension. BSService and BSSExtension are implementations -->
+	<script type="text/javascript" src="../BigSemanticsJavaScript/bsjsCore/Readyable.js"></script>
+	<script type="text/javascript" src="../BigSemanticsJavaScript/bsjsCore/BSAutoSwitch.js"></script>
+	<script type="text/javascript" src="../BigSemanticsJavaScript/bsjsCore/BSService.js"></script>
+	<script type="text/javascript" src="../BigSemanticsJavaScript/bsjsCore/BSExtension.js"></script>
+	<!-- BSUtils, Downloader, ParsedURL, and simplBase are helper classes. Include them, but don't really worry about them-->
+	<script type="text/javascript" src="../BigSemanticsJavaScript/bsjsCore/BSUtils.js"></script>
+	<script type="text/javascript" src="../BigSemanticsJavaScript/bsjsCore/ParsedURL.js"></script>
+	<script type="text/javascript" src="../BigSemanticsJavaScript/bsjsCore/Downloader.js"></script>
+	<script type="text/javascript" src="../BigSemanticsJavaScript/bsjsCore/simpl/simplBase.js"></script>
+	<!-- MetadataTask is the preffered interface for using BSJS when you only want data and not to render it via our software
+		RepoMan loads a Meta-metadata repository. Avoid doing anything with it directly; it's messy-->
+	<script type="text/javascript" src="../BigSemanticsJavaScript/bsjsCore/MetadataTask.js"></script>
+	<script type="text/javascript" src="../BigSemanticsJavaScript/bsjsCore/RepoMan.js"></script>
+	<!-- Various helped classes for renderers. MetadataViewModel takes our raw data and puts it in a nice format for the
+		 various metadata renderers (of which only one is shown here). InterfaceStyle is a dictionary that lets us style
+		 elements differently in different renderers. -->
+	<script type="text/javascript" src="../BigSemanticsJavaScript/bsjsCore/MetadataViewModel.js"></script>
+	<script type="text/javascript" src="../BigSemanticsJavaScript/renderers/interfaceStyle.js"></script>
+	<!-- The RenderingFiles!! RendererBase is your entry point for rendering via our software. RenderingTask handles some various data processing and can, on a good day, select an ideal renderer for metadata if one isn't specified. Vanilla Mice, mice, baby does *most* of the rendering work. The initial plan was for VanillaMICE to extend RendererBase, but in practice they've began to diverge.
+
+	Bootstrap.min.css is a neccesary evil - there's some particular bit of css in there that lets MICE render properly. I'm trying to hunt it
+	down so that bootstrap is not a dependency, but I haven't succeeded yet
+	-->
+
+	<script type="text/javascript" src="../BigSemanticsJavaScript/renderers/RendererBase.js"></script>
+	<script type="text/javascript" src="../BigSemanticsJavaScript/renderers/RenderingTask.js"></script>
+	<script type="text/javascript" src="../BigSemanticsJavaScript/renderers/VanillaMICE.js"></script>
+    <link href="../BigSemanticsJavaScript/renderers/styles/metadataRenderer.css" rel="stylesheet" type="text/css">
+    <link href="../BigSemanticsJavaScript/libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+	<!--Webpage-specific javascript and CSS includes-->
+	<script type="text/javascript" src="./demo.js"></script>
+    <link href="./demo.css" rel="stylesheet" type="text/css">
+    <!-- I like the roboto font because it makes me feel like a real developer-->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500,400italic,500italic,300italic,300,100italic,100' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+
+<!-- Upon the page being loaded, the onLoad function in demo.js will be called-->
+<body onload="onLoadRendering('containerPrime', 'http://www.amazon.com/gp/product/B00MRHANNI')">
+
+	<h1>Nice to meet you, where you've been</h1>
+
+	<div class="renderingContainer" id="containerPrime">
+		<!-- VanillaMICE will visciously remove any children of its container. Hence, we can have a nice little loading gif here that will be automagically cleared away-->
+		<img class="loadingGifOfDoom" src="./loading.gif"></img>
+	</div>
+
+	<h3>I can render incredible things</h3>
+	<div class="callbackMessageHolder" id="priceOutput"></div>
+
+</body>
+
+
+
+</html>
