@@ -113,6 +113,11 @@ function gagaOhLala(err, metadataAndMetametaData){
 
 		var imageCont = document.getElementById('imageCont');
 		imageCont.appendChild(youtubeThumbnail);
+		imageCont.addEventListener('click',function(){
+			var locationWithTime = unwrappedMetadata.location + "&t=7m2s";
+			window.open(locationWithTime,'_blank');
+
+		})
 		var viewCont = document.getElementById('viewCont');
 		viewCont.appendChild(textNode);
 
