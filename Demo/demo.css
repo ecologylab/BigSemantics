@@ -1,61 +1,70 @@
-body{
+body {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 0px;
 	margin-top: 20px;
-	    background-color: rgba(0,0,0, .05);
+	background-color: rgba(0,0,0, .05);
 }
 
-h3{
+h3 {
     font-family: 'Roboto', sans-serif;
     color: #727272;
     font-weight: 300;
+    font-size: 24.5px;
+    line-height: 40px;
+    margin: 10px 0;
 }
-a{
-	
+
+a {
 	font-family: 'Roboto', sans-serif;
 	color: #03A9F4;
 	font-weight: 300;
 	font-size: 18px;
 	margin-bottom: 24px;
 	text-decoration: none;
-
-
 }
 
-h1{
+h1 {
     font-family: 'Roboto', sans-serif;
     color: #727272;
-    font-weight: 300;}
+    font-weight: 300;
+    font-size: 38.5px;
+    line-height: 40px;
+    margin: 10px 0px;
+}
 
-.renderingContainer{
+.renderingContainer {
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,.25);
     border-radius: 4px;
     background-color: white;
-
 }
-.callbackMessageHolder{
+
+.callbackMessageHolder {
 	font-family: 'Roboto', sans-serif;
     color: #727272;
     font-size: 18px;
     font-weight: bold;
 }
 
-.youtubeThumbnail{
+.youtubeThumbnail {
 	max-width: 500px;
 }
-#youtubeOutput{
+
+#youtubeOutput {
 	display: flex;
     flex-direction: column;
     align-items: center;
  	box-shadow: 0px 0px 5px 0px rgba(0,0,0,.25);
     border-radius: 4px;
-
 }
-#viewCont{
+
+#viewCont {
 	line-height: 40px
 }
-.loadingGifOfDoom{
+
+#loadingGifOfDoom {
 	width: 30px;
 	height: 30px;
+}

@@ -7,9 +7,6 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<title>Simple BigSemantics Demo</title>
 
-	<!-- non BigSemantics include statements -->
-	<script src="../BigSemanticsJavaScript/libraries/jquery-2.0.0.min.js"></script>
-
 
 	<!-- bsjsCore Files. You must include them in this order so as to use any BigSemantics porject -->
 	<!-- Readyable is a class used to handle the asynchronous load time of the BS project
@@ -42,8 +39,8 @@
 	<script type="text/javascript" src="../BigSemanticsJavaScript/renderers/RendererBase.js"></script>
 	<script type="text/javascript" src="../BigSemanticsJavaScript/renderers/RenderingTask.js"></script>
 	<script type="text/javascript" src="../BigSemanticsJavaScript/renderers/VanillaMICE.js"></script>
+
     <link href="../BigSemanticsJavaScript/renderers/styles/metadataRenderer.css" rel="stylesheet" type="text/css">
-    <link href="../BigSemanticsJavaScript/libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
 	<!--Webpage-specific javascript and CSS includes-->
 	<script type="text/javascript" src="./demo.js"></script>
@@ -62,7 +59,7 @@
 
 	<div class="renderingContainer" id="containerPrime">
 		<!-- VanillaMICE will visciously remove any children of its container. Hence, we can have a nice little loading gif here that will be automagically cleared away-->
-		<img class="loadingGifOfDoom" src="./loading.gif"></img>
+		<img id="loadingGifOfDoom" src="./loading.gif"></img>
 	</div>
 
 	<h3>I can render incredible things</h3>

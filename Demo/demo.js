@@ -10,13 +10,11 @@
 
 var bsService = new BSAutoSwitch(['elkanacmmmdgbnhdjopfdeafchmhecbf', 'gdgmmfgjalcpnakohgcfflgccamjoipd ']);
 
-
 /*
 Called on the rendering demo page
 */
-function onLoadRendering(containerID, url){
-
-
+function onLoadRendering(containerID, url)
+{
 	/*
 	Let's break down the arguments.
 		-container: whatever HTML node you want to dump the rendering into
@@ -35,14 +33,14 @@ function onLoadRendering(containerID, url){
 	options.callback = swizzIt;
 
 	RendererBase.addMetadataDisplay(container, url, null, MICE.render, options);
-
-
 }
+
 /*
 	In a callback passed through via options, you are given access to metadata and the meta-metadata.
 	You can probably ignore the meta-metadata.
 */
-function swizzIt(metadataAndMetametaData){
+function swizzIt(metadataAndMetametaData)
+{
 	//To make metadata easier to use via js, first unwrap it (it's initially wrapped for cross-compatibility with C#)
 	var unwrappedMetadata = BSUtils.unwrap(metadataAndMetametaData.metadata);
 	//using unwrapped metadata is super easy and all the cool kids do it
@@ -60,15 +58,13 @@ function swizzIt(metadataAndMetametaData){
 		textHold.appendChild(textNode)
 
 	}
-
-
-
 }
 
 /*
 Called on the data-only page
 */
-function onLoadSemantics(url){
+function onLoadSemantics(url)
+{
 	/*
 	Let's break down the arguments.
 		-url: the URL you want metadata for
@@ -83,21 +79,20 @@ function onLoadSemantics(url){
 
 // Ignore this. I just use it to make numbers slightly prettier -- visciously copy-pasted from stack overflow:
 // http://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript
-
-function numberWithCommas(x) {
+function numberWithCommas(x)
+{
     return x.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
+
 //The first argument passed to callback is an error message. in this case its null <3
-
-function gagaOhLala(err, metadataAndMetametaData){
-
-
-
+function gagaOhLala(err, metadataAndMetametaData)
+{
 	//To make metadata easier to use via js, first unwrap it (it's initially wrapped for cross-compatibility with C#)
 	var unwrappedMetadata = BSUtils.unwrap(metadataAndMetametaData.metadata);
+	
 	//Before using the data, i kill off my loading indicator
-	$('.loadingGifOfDoom').remove();
+	document.getElementById('loadingGifOfDoom').parentElement.removeChild(document.getElementById('loadingGifOfDoom'));
 
 	//we create a node to hold the linked image
 	//never trust metadata! Like file I/O you should wrap it try catch statements
@@ -120,9 +115,6 @@ function gagaOhLala(err, metadataAndMetametaData){
 		imageCont.appendChild(youtubeThumbnail);
 		var viewCont = document.getElementById('viewCont');
 		viewCont.appendChild(textNode);
-
-
-
 
 	}catch(e){
 		var textOutput = "the youtube wrapper is experiencing problems, sorry :(";
