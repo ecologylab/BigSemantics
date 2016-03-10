@@ -9,4 +9,4 @@ An example is the [Metadata In-Context Expander](http://ecologylab.net/mice) whi
 * [A scholarly paper from the ACM Digital Library](http://ecologylab.net/research/bigsemantics/MICE/index.html?url=http://dl.acm.org/citation.cfm?id=1121979)
 * [A Wikipedia article](http://ecologylab.net/research/bigsemantics/MICE/index.html?url=http://en.wikipedia.org/wiki/Pablo_Picasso)
 
-Check out [the Wiki page] (https://github.com/ecologylab/BigSemantics/wiki) to get started with BigSemantics.
+Check out [the Wiki page] (https://github.com/ecologylab/BigSemantics/wiki) to get started with BigSemantics, or you can view [demos] (http://ecologylab.github.io/BigSemantics/).
